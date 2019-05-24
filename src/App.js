@@ -1,23 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import NavBar from "./components/NavBar.jsx";
+import logos from "./SiteLOGO.svg";
+import Boxes from "./components/Boxes.jsx";
 
 function App() {
   return (
     <div className="App">
+      <NavBar />
+      <Boxes />
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img src={logos} className="App-logo" alt="logo" />
+        <p>Find out which MV is the most viewed of EXO or TWICE</p>
       </header>
     </div>
   );
